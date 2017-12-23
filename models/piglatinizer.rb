@@ -1,15 +1,11 @@
 class PigLatinizer
-  def piglatinize(sentence)
+  def to_pig_latin(sentence)
     array_of_words = sentence.split(" ")
     array_of_words.map do |word|
       piglatinize_word(word)
     end.join(" ")
   end
-  private
-  def is_vowel?(letter)
-    ("aeoui").include?(letter.downcase)
-  end
-  def piglatinize_word(word)
+  def piglatinize(word)
     n = 0
     while word.length > n && is_vowel?(word[n]) == false do
       n+=1
@@ -21,5 +17,9 @@ class PigLatinizer
       ending_string = is_vowel?(word[0]) ? "way" : word[0]+"ay"
     end
     starting_string + ending_string
+  end
+  private
+  def is_vowel?(letter)
+    ("aeoui").include?(letter.downcase)
   end
 end
