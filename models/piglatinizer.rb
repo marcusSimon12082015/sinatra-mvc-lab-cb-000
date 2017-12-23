@@ -5,6 +5,7 @@ class PigLatinizer
       n+=1
     end
     starting_string = word[n..word.length-1]
+    binding.pry
     if n > 1
       ending_string = word[0..n]+"ay"
     else
