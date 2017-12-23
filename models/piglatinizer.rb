@@ -1,7 +1,7 @@
 class PigLatinizer
   def piglatinize(word)
     n = 0
-    while word.length > n || is_vowel?(word[n]) do
+    while word.length > n || is_vowel?(word[n]) == false do
       n+=1
     end
     starting_string = word[n..word.length-1]
