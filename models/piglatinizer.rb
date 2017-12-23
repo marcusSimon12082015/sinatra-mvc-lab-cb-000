@@ -1,9 +1,8 @@
 class PigLatinizer
   def piglatinize(word)
-    
     binding.pry
   end
-  private 
+  private
   def is_vowel(letter)
     letter.include?(/[aeoui]/)
   end
