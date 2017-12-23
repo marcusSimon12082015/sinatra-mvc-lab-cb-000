@@ -2,7 +2,7 @@ class PigLatinizer
   def piglatinize(sentence)
     array_of_words = sentence.split(" ")
     array_of_words.map do |word|
-      piglatinize(word)
+      piglatinize_word(word)
       binding.pry
     end.join(" ")
   end
