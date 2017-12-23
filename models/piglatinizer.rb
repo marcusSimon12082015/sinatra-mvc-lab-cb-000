@@ -11,7 +11,6 @@ class PigLatinizer
       ending_string = word[0]+"ay"
     end
     starting_string + ending_string
-    binding.pry
   end
   private
   def is_vowel?(letter)
