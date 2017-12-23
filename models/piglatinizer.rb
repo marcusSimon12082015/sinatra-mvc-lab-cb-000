@@ -1,3 +1,3 @@
-class PigLatinizer 
+class PigLatinizer
 
 end 
