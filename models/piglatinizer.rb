@@ -2,7 +2,7 @@ class PigLatinizer
   def piglatinize(word)
     n = 0
     while word.length < n || word.is_vowel(word[n])
-      n++;
+      n++
       binding.pry
     end
   end
