@@ -14,7 +14,7 @@ class PigLatinizer
     starting_string + ending_string
   end
   private
-  def is_vowel(letter)
+  def is_vowel?(letter)
     ("aeoui").include?(letter)
   end
 end
