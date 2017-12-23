@@ -10,7 +10,7 @@ class PigLatinizer
     else
       ending_string = is_vowel?(word[0]) ? "way" : word[0]+"ay"
     end
-    binding.pry
+    #binding.pry
     starting_string + ending_string
   end
   private
