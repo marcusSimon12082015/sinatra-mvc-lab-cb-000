@@ -4,9 +4,9 @@ class PigLatinizer
     while word.length > n || !is_vowel(word[n])
       n+=1
     end
+    binding.pry
     starting_string = word[n..word.size-1]
     ending_string = word[0..n]+"ay"
-    binding.pry
   end
   private
   def is_vowel(letter)
