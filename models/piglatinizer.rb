@@ -3,7 +3,8 @@ class PigLatinizer
     array_of_words = sentence.split(" ")
     array_of_words.map do |word|
       piglatinize(word)
-    end.join(" ") 
+    end.join(" ")
+    binding.pry
   end
   private
   def is_vowel?(letter)
