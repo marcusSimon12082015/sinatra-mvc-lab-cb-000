@@ -6,7 +6,7 @@ class PigLatinizer
     end
     starting_string = word[n..word.length-1]
     if n > 1
-      ending_string = word[0..n]+"ay"
+      ending_string = word[0..n-1]+"ay"
     else
       ending_string = is_vowel?(word[0]) ? "way" : word[0]+"ay"
     end
