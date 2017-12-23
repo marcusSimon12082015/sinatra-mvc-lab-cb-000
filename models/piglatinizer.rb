@@ -4,6 +4,6 @@ class PigLatinizer
   end
   private
   def is_vowel(letter)
-    letter.include?(/[aeoui]/)
+    ("aeoui").include?(letter)
   end
 end
