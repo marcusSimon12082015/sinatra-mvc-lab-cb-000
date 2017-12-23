@@ -1,10 +1,10 @@
 class PigLatinizer
   def piglatinize(sentence)
     array_of_words = sentence.split(" ")
+    binding.pry
     array_of_words.map do |word|
       piglatinize(word)
     end.join(" ")
-    binding.pry
   end
   private
   def is_vowel?(letter)
