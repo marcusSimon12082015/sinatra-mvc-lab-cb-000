@@ -3,6 +3,7 @@ class PigLatinizer
     n = 0
     while word.length > n || is_vowel?(word[n]) == false do
       n+=1
+      binding.pry
     end
     starting_string = word[n..word.length-1]
     if n > 1
@@ -14,7 +15,6 @@ class PigLatinizer
   end
   private
   def is_vowel?(letter)
-    binding.pry
     ("aeoui").include?(letter)
   end
 end
